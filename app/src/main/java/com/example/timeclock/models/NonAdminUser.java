@@ -19,6 +19,18 @@ public class NonAdminUser extends User {
         this.currentShift = currentShift;
     }
 
+    public static final Creator<NonAdminUser> CREATOR = new Creator<NonAdminUser>() {
+        @Override
+        public NonAdminUser createFromParcel(Parcel source) {
+            return new NonAdminUser(source);
+        }
+
+        @Override
+        public NonAdminUser[] newArray(int size) {
+            return new NonAdminUser[size];
+        }
+    };
+
     @Override
     public int describeContents() {
         return 0;
@@ -34,16 +46,4 @@ public class NonAdminUser extends User {
         super(in);
         this.currentShift = in.readParcelable(Shift.class.getClassLoader());
     }
-
-    public static final Creator<NonAdminUser> CREATOR = new Creator<NonAdminUser>() {
-        @Override
-        public NonAdminUser createFromParcel(Parcel source) {
-            return new NonAdminUser(source);
-        }
-
-        @Override
-        public NonAdminUser[] newArray(int size) {
-            return new NonAdminUser[size];
-        }
-    };
 }

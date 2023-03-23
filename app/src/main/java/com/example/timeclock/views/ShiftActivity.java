@@ -65,7 +65,7 @@ public class ShiftActivity extends AppCompatActivity {
                         // There are no request codes
                         Intent intent = result.getData();
                         if (intent != null) {
-                            Bundle bundle = intent.getExtras();
+                            Bundle bundle = intent.getBundleExtra("bundle");
                             Uri uri = bundle.getParcelable("uri");
                             //TODO ideally with a real API we would upload this pic
                             // somewhere and we would be setting the pic's URL

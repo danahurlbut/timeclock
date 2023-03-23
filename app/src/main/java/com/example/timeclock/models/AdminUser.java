@@ -10,6 +10,18 @@ public class AdminUser extends User {
 
     }
 
+    public static final Creator<AdminUser> CREATOR = new Creator<AdminUser>() {
+        @Override
+        public AdminUser createFromParcel(Parcel source) {
+            return new AdminUser(source);
+        }
+
+        @Override
+        public AdminUser[] newArray(int size) {
+            return new AdminUser[size];
+        }
+    };
+
     @Override
     public int describeContents() {
         return 0;
@@ -23,16 +35,4 @@ public class AdminUser extends User {
     protected AdminUser(Parcel in) {
         super(in);
     }
-
-    public static final Creator<AdminUser> CREATOR = new Creator<AdminUser>() {
-        @Override
-        public AdminUser createFromParcel(Parcel source) {
-            return new AdminUser(source);
-        }
-
-        @Override
-        public AdminUser[] newArray(int size) {
-            return new AdminUser[size];
-        }
-    };
 }

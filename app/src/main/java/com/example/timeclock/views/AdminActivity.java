@@ -39,7 +39,7 @@ public class AdminActivity extends AppCompatActivity {
 
         idleEventHandler = new IdleEventHandler(this);
 
-        Bundle bundle = getIntent().getExtras();
+        Bundle bundle = getIntent().getBundleExtra("bundle");
         if (bundle != null) {
             AdminUser adminUser = bundle.getParcelable("user");
             viewModel.setAdminUser(adminUser);

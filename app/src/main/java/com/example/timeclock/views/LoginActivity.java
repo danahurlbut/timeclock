@@ -93,13 +93,13 @@ public class LoginActivity extends AppCompatActivity {
                         if (user.getUserType() == User.UserType.administrator) {
                             bundle.putParcelable("user", user);
                             Intent intent = new Intent(this, AdminActivity.class);
-                            intent.putExtras(bundle);
+                            intent.putExtra("bundle", bundle);
                             startActivity(intent);
                             finish();
                         } else {
                             bundle.putParcelable("user", user);
                             Intent intent = new Intent(this, ShiftActivity.class);
-                            intent.putExtras(bundle);
+                            intent.putExtra("bundle", bundle);
                             startActivity(intent);
                             finish();
                         }

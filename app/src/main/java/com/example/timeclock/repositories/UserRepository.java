@@ -1,7 +1,5 @@
 package com.example.timeclock.repositories;
 
-import android.util.Log;
-
 import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 
@@ -34,6 +32,8 @@ public class UserRepository {
                 public void onResponse(@NonNull Call<UserResponse> call, @NonNull Response<UserResponse> response) {
                     if (response.isSuccessful() && response.body() != null)
                         userMutableLiveData.setValue(response.body().getUser());
+                    else
+                        userMutableLiveData.setValue(null);
                 }
 
                 @Override
