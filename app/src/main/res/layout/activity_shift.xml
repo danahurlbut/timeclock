@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcome_text"
+                android:textSize="24sp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shift_text"
+                android:textSize="22sp"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:textColor="@color/purple_700"
+                android:id="@+id/instructions_text" />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:id="@+id/start_shift_button"
+                android:layout_marginTop="20dp"
+                android:text="@string/take_photo_button"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_selector"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                style="?android:attr/borderlessButtonStyle"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/user_photo"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/user_pic"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

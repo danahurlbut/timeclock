@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">timeclock</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_text">Log In</string>
+    <string name="logout_button_text">Log Out</string>
+    <string name="login_field_helper">Required</string>
+    <string name="welcome_user">Welcome back, %1$s!</string>
+    <string name="user_pic">User\'s Picture</string>
+    <string name="take_photo_button">Take Photo</string>
+    <string name="get_location_button">Get Location</string>
+    <string name="start_shift_header">Start Shift</string>
+    <string name="end_shift_header">End Shift</string>
+    <string name="shift_start_step1_instructions">To start your shift, you will need to allow the app to take your picture and access your location. Click the button below to begin by taking your photo.</string>
+    <string name="shift_end_step1_instructions">To end your shift, you will need to allow the app to take your picture and access your location. Click the button below to begin by taking your photo.</string>
+    <string name="shift_start_end_step2_instructions">Picture taken successfully! Next, tap the button below to allow the app to access your location.</string>
+    <string name="shift_start_step3_instructions">Your location has successfully been retrieved with longitude %1$f and latitude %2$f. Click the button below to start your shift. Window will close.</string>
+    <string name="shift_end_step3_instructions">Your location has successfully been retrieved with longitude %1$f and latitude %2$f. Click the button below to end your shift. Window will close.</string>
+    <string name="camera_permissions_message">Please grant the requested camera permissions.</string>
+    <string name="location_permissions_message">Please grant the requested locations permissions.</string>
+    <string name="photo_button">Take Photo</string>
+    <string name="start_shift_button">Start Shift</string>
+    <string name="end_shift_button">End Shift</string>
+    <string name="image_capture_failed">Photo failed. Please try again.</string>
+    <string name="location_access_failed">Location access failed. Please try again.</string>
+    <string name="call_failed">Call failed. Please try again.</string>
+</resources>
